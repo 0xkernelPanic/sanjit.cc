@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="tmrstyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  </head>
+  <body class="sj-green">
+<div class="w3-sidebar w3-bar-block sj-blueblack" style="width:25%">
+  <h3 class="w3-bar-item sj-yellow centertext"><b>sjTimer</b></h3>
+  <a href="#" class="w3-bar-item w3-button sj-lightgrey" onclick="startIns()">Start Inspection (<span id="insOut">15</span>)
+  </a>
+  <a href="#" class="w3-bar-item w3-button">PB: 
+    <span id="fastest"></span>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Avg: 
+    <span id="overallAv"></span>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Solves:
+    <span id="numSolvesOut"></span>
+  </a>
+  
+  
+  <a href="#" class="w3-bar-item w3-button">Times:
+    <span id="timeList"></span>
+    <div id="tp"></div>
+  </a>
+
+
+</div>
+<div>
+<div class="w3-bar w3-border sj-blueblack w3-left" style=" height:51px; margin-left: 25%;">
+<h3 id="afterthis" >&nbsp; Scramble: <span id="scramblearea"></span></h3>
+
+</div>
+</div>
+
+<div id="timeOut" class="center"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
+<style>
+.center {
+  font-size: 100px;
+  color: #293250;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 62.5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.centertext {
+  line-height: 30px;
+  height: 50px;
+  border: 3px solid green;
+  text-align: center;
+}
+b{
+  font-family: Ubuntu, sans-serif;
+  font-size: 25px;
+}
+.sj-blueblack {
+  background-color: #293250;
+  color: white;
+}
+.sj-yellow {
+  background-color: #FFD55A;
+}
+.sj-green {
+  background-color: #6DD47E;
+}
+.sj-lightgrey {
+  background-color: #D3D3D3;
+  color: black;
+}
+</style>
+    <script src="twistysim.js"></script>  
+    <script src="timerscript.js"></script>
+  </body>
+</html>
