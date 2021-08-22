@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Sanjit.cc</title>
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+      
+   </head>
+   <body class="w3-pale-blue">
+
+         <img src="content/banner2.jpg" style="width: 100%; height: 100%;"></img>
+         <div class="w3-bar w3-metro-light-blue">
+           <a href="#" class="w3-bar-item w3-button w3-metro-blue">Home</a>
+           <a href="#" class="w3-bar-item w3-button">Projects</a>
+           <a href="#" class="w3-bar-item w3-button">Journal</a>
+           <a href="#" class="w3-bar-item w3-button">Cubing</a>
+         </div>
+         <br />
+         <div class="w3-container">
+         <div class="s3-container w3-display-container w3-text-white w3-blue">
+         <img id="blurimg"class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUAmf8q++MEAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC" alt="Lights" style="width:100% height:auto;">
+         <div class="w3-padding w3-display-middle">
+           <h1 id="demo"></h1>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 1, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+           <p class="w3-medium">Countdown to PSLE</p>
+           </img>
+         </div>
+         </div>
+         </div>
+         <br />
+         <div class="w3-container">
+         <div class="s3-container w3-display-container w3-text-white w3-blue">
+         <img id="blurimg"class="" src="https://sanjitcc2.rsanjit20.repl.co/content/sjBanner.png" alt="Lights" style="width:100%">
+         <div class="w3-padding w3-display-middle">
+           <h1>sjTimer</h1>
+           <p class="w3-medium">Timer with cubing features</p>
+           <button class="w3-button w3-blue w3-small">Go to sjTimer ➡</button></img>
+         </div>
+         </div>
+         </div>
+         <br>
+         <div class="w3-container">
+         <div class="s3-container w3-display-container w3-text-black">
+         <img id="blurimg"class="" src="data:image/png;base64,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" alt="Lights" style="width:100%">
+         <div class="w3-display-middle">
+           <h2>Server Login</h2>
+           <button class="w3-button w3-blue w3-small"><a href="http://bb116-14-24-99.singnet.com.sg:9090/">Login ➡</button></a></img>
+         </div>
+         </div>
+         </div>
+         
+         <div>
+           <form id="contactForm" class="w3-container w3-card-4 w3-metro-light-blue w3-text-blue w3-margin">
+         <h2 class="w3-center">Contact Me</h2>
+         
+         <div class="w3-row w3-section">
+         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+         <div class="w3-rest">
+         <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+         </div>
+         </div>
+         
+         <div class="w3-row w3-section">
+         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+         <div class="w3-rest">
+         <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+         </div>
+         </div>
+         
+         <div class="w3-row w3-section">
+         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+         <div class="w3-rest">
+         <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+         </div>
+         </div>
+         
+         <div class="w3-row w3-section">
+         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+         <div class="w3-rest">
+         <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+         </div>
+         </div>
+         
+         <button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding" onclick="SubForm()">Send</button>
+         
+         </form>
+         
+         </div>
+          <script
+         src="https://code.jquery.com/jquery-3.4.1.js"
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+         crossorigin="anonymous"></script>
+         <script src="script.js"></script>
+      </script>
+   </body>
+</html>
